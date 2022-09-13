@@ -1,17 +1,19 @@
+
 let num = 13;
+
 let prime = true;
     
-    for(let x=2; x<num; x++){
-        
-        if(num % x == 1){
-            
-            prime = true;
-        }
-    }
+for(let x=2; x<num; x++){
     
-    if(prime == true){
-        console.log("Yes");
+    if(num % x == 0){
         
-    }else{
-        console.log("No");
+        prime = false
     }
+}
+
+if(prime == true){
+    console.log("Yes");
+    
+}else{
+    console.log("No");
+}
